@@ -49,3 +49,13 @@ Expected Output :
 00.68 %  bus
 
 
+##Runtime
+
+  * GPU (Titan X) Theano optimizer=fast_run       : 117 seconds
+  * GPU (Titan X) Theano optimizer=fast_compile   : 122 seconds
+  * CPU (i7-5820K CPU @ 3.30GHz                   : 160 seconds
+
+
+NOTE:
+See the comments on demo.py for more information on the model and methods
+
