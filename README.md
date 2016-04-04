@@ -28,11 +28,11 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
 
 ##Usage
 
-> python demo.py --file `path_to_file` --question "Question to be asked"
+> python demo.py -image_file_name `path_to_file` -question "Question to be asked"
 
 e.g 
 
-> python demo.py --file test.jpg --question "Is there a man in the picture?"
+> python demo.py -image_file_name test.jpg -question "Is there a man in the picture?"
 
 
 if you have prefer to use Theano backend and if you have GPU you may want to run like this
