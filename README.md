@@ -55,6 +55,10 @@ Expected Output :
   * GPU (Titan X) Theano optimizer=fast_compile   : 122 seconds
   * CPU (i7-5820K CPU @ 3.30GHz                   : 160 seconds
 
+##iPython Notebook
+
+Jupyter/iPython Notebook has bee provided with more examples and interactive tutorial.
+<https://github.com/iamaaditya/VQA_Demo/blob/master/Visual_Question_Answering_Demo_in_python_notebook.ipynb>
 
 NOTE:
 See the comments on demo.py for more information on the model and methods

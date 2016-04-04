@@ -1,4 +1,12 @@
 # VQA Model 
+
+## Block Diagram
+
+<img src='https://raw.githubusercontent.com/iamaaditya/VQA_Demo/master/model_vqa.png'>
+
+## Model JSON
+
+
 ```json
 {
     "layers": [
