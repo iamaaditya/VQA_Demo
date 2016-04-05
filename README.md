@@ -60,7 +60,7 @@ Expected Output :
 
 ##iPython Notebook
 
-Jupyter/iPython Notebook has bee provided with more examples and interactive tutorial.
+Jupyter/iPython Notebook has been provided with more examples and interactive tutorial.
 <https://github.com/iamaaditya/VQA_Demo/blob/master/Visual_Question_Answering_Demo_in_python_notebook.ipynb>
 
 NOTE:
