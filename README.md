@@ -18,8 +18,8 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
     * Used to load Glove vectors (word2vec)
     * You may have to upgrade your Spacy to use Glove vectors (default is Goldberg Word2Vec)
     * To upgrade & install Glove Vectors
-      * pip install --upgrade spacy
-      * sputnik —name spacy install en
+      * pip install spacy==0.100.6
+      * python -m spacy.en.download
       * sputnik --name spacy install en_glove_cc_300_1m_vectors
 
 5. OpenCV 
