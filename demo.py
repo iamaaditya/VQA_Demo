@@ -30,7 +30,7 @@ def get_image_model(CNN_weights_file_name):
 def get_image_features(image_file_name, CNN_weights_file_name):
     ''' Runs the given image_file to VGG 16 model and returns the 
     weights (filters) as a 1, 4096 dimension vector '''
-    image_features = np.zeros((1, 1000))
+    image_features = np.zeros((1, 4096))
     # Magic_Number = 4096  > Comes from last layer of VGG Model
 
     # Since VGG was trained as a image of 224x224, every new image

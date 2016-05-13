@@ -2,7 +2,7 @@
 
 This is a simple Demo of Visual Question answering which uses pretrained models (see models/CNN and models/VQA) to answer a given question about the given image.
 
-## Dependency
+## Dependency (Python dependencies listed on requirements.txt)
 
 1. Keras
    * Modular deep learning library based on python
@@ -17,8 +17,7 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
 4. Spacy 
     * Used to load Glove vectors (word2vec)
     * You may have to upgrade your Spacy to use Glove vectors (default is Goldberg Word2Vec)
-    * To upgrade & install Glove Vectors
-      * pip install spacy==0.100.6
+    * To install Glove Vectors
       * python -m spacy.en.download
       * sputnik --name spacy install en_glove_cc_300_1m_vectors
 
