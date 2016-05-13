@@ -4,7 +4,7 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
 
 ## Dependency
 
-1. Keras
+1. Keras version 1.0.2
    * Modular deep learning library based on python
 
 2. Theano/Tensorflow 
@@ -14,7 +14,7 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
 3. scikit-learn
    * Quintessential machine library for python
 
-4. Spacy 
+4. Spacy version 0.100.6
     * Used to load Glove vectors (word2vec)
     * You may have to upgrade your Spacy to use Glove vectors (default is Goldberg Word2Vec)
     * To upgrade & install Glove Vectors
@@ -44,19 +44,18 @@ if you have prefer to use Theano backend and if you have GPU you may want to run
 
 
 Expected Output :
-
-78.32 %  train
-01.11 %  truck
-00.98 %  passenger
-00.95 %  fire truck
-00.68 %  bus
+095.2 %  train
+00.67 %  subway
+00.54 %  mcdonald's
+00.38 %  bus
+00.33 %  train station
 
 
 ##Runtime
 
-  * GPU (Titan X) Theano optimizer=fast_run       : 117 seconds
-  * GPU (Titan X) Theano optimizer=fast_compile   : 122 seconds
-  * CPU (i7-5820K CPU @ 3.30GHz                   : 160 seconds
+  * GPU (Titan X) Theano optimizer=fast_run       : 51.3 seconds
+  * GPU (Titan X) Theano optimizer=fast_compile   : 47.5 seconds
+  * CPU (i7-5820K CPU @ 3.30GHz                   : 35.9 seconds (Is this strange or not ?)
 
 ##iPython Notebook
 

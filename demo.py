@@ -6,7 +6,6 @@ from sklearn.externals import joblib
     
 # File paths for the model, all of these except the CNN Weights are 
 # provided in the repo, See the models/CNN/README.md to download VGG weights
-VQA_model_file_name     = 'models/VQA/VQA_MODEL.json'
 VQA_weights_file_name   = 'models/VQA/VQA_MODEL_WEIGHTS.hdf5'
 label_encoder_file_name = 'models/VQA/FULL_labelencoder_trainval.pkl'
 CNN_weights_file_name   = 'models/CNN/vgg16_weights.h5'
@@ -47,14 +46,13 @@ def get_image_features(image_file_name, CNN_weights_file_name):
     image_features[0,:] = get_image_model(CNN_weights_file_name).predict(im)[0]
     return image_features
 
-def get_VQA_model(VQA_model_file_name, VQA_weights_file_name):
+def get_VQA_model(VQA_weights_file_name):
     ''' Given the VQA model and its weights, compiles and returns the model '''
 
-    # thanks the keras function for loading a model from JSON, this becomes
-    # very easy to understand and work. Alternative would be to load model
-    # from binary like cPickle but then model would be obfuscated to users
-    vqa_model = model_from_json(open(VQA_model_file_name).read())
+    from models.VQA.VQA import VQA_MODEL
+    vqa_model = VQA_MODEL()
     vqa_model.load_weights(VQA_weights_file_name)
+
     vqa_model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
     return vqa_model
 
@@ -64,7 +62,7 @@ def get_question_features(question):
     calculated using Glove Vector '''
     word_embeddings = spacy.load('en', vectors='en_glove_cc_300_1m_vectors')
     tokens = word_embeddings(question)
-    question_tensor = np.zeros((1, len(tokens), 300))
+    question_tensor = np.zeros((1, 30, 300))
     for j in xrange(len(tokens)):
             question_tensor[0,j,:] = tokens[j].vector
     return question_tensor
@@ -88,7 +86,7 @@ def main():
     question_features = get_question_features(unicode(args.question, 'utf-8'))
 
     if verbose : print("Loading VQA Model ...")
-    vqa_model = get_VQA_model(VQA_model_file_name, VQA_weights_file_name)
+    vqa_model = get_VQA_model(VQA_weights_file_name)
 
 
     if verbose : print("\n\n\nPredicting result ...") 
