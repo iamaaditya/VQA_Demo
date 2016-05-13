@@ -2,7 +2,9 @@
 
 This is a simple Demo of Visual Question answering which uses pretrained models (see models/CNN and models/VQA) to answer a given question about the given image.
 
-## Dependency (Python dependencies listed on requirements.txt)
+## Dependency 
+
+(Python dependencies listed on requirements.txt)
 
 1. Keras
    * Modular deep learning library based on python
