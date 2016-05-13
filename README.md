@@ -4,7 +4,7 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
 
 ## Dependency 
 
-(Python dependencies listed on requirements.txt)
+(Python dependencies and versions used listed on requirements.txt)
 
 1. Keras
    * Modular deep learning library based on python
