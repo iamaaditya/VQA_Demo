@@ -27,10 +27,7 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
     * You may use other libraries as long as you can pass a 224x224 BGR Image (NOTE: BGR and not RGB)
     * 
 
-# VQA Training
 
-* See the repo https://github.com/iamaaditya/VQA_Keras for learn how to train new models
-  
 6. VGG 16 Pretrained Weights
     * Please download the weights file [vgg16_weights.h5](https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view)
 
@@ -70,3 +67,6 @@ Jupyter/iPython Notebook has been provided with more examples and interactive tu
 NOTE:
 See the comments on demo.py for more information on the model and methods
 
+# VQA Training
+
+* See the repo https://github.com/iamaaditya/VQA_Keras for learn how to train new models
