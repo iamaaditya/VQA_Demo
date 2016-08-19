@@ -35,6 +35,15 @@ def get_image_features(image_file_name, CNN_weights_file_name):
     # Since VGG was trained as a image of 224x224, every new image
     # is required to go through the same transformation
     im = cv2.resize(cv2.imread(image_file_name), (224, 224))
+
+
+    # The mean pixel values are taken from the VGG authors, which are the values computed from the training dataset.
+    mean_pixel = [103.939, 116.779, 123.68]
+
+    im = im.astype(np.float32, copy=False)
+    for c in range(3):
+        im[:, :, c] = im[:, :, c] - mean_pixel[c]
+
     im = im.transpose((2,0,1)) # convert the image to RGBA
 
     
