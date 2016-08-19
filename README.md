@@ -25,6 +25,11 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
 5. OpenCV 
     * OpenCV is used only to resize the image and change the color channels,
     * You may use other libraries as long as you can pass a 224x224 BGR Image (NOTE: BGR and not RGB)
+    * 
+
+# VQA Training
+
+* See the repo https://github.com/iamaaditya/VQA_Keras for learn how to train new models
   
 6. VGG 16 Pretrained Weights
     * Please download the weights file [vgg16_weights.h5](https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view)
