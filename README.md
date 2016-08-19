@@ -69,4 +69,4 @@ See the comments on demo.py for more information on the model and methods
 
 # VQA Training
 
-* See the repo https://github.com/iamaaditya/VQA_Keras for learn how to train new models
+* See the repo https://github.com/iamaaditya/VQA_Keras to learn how to train new models
