@@ -1,4 +1,4 @@
-#VQA Demo
+# VQA Demo
 
 This is a simple Demo of Visual Question answering which uses pretrained models (see models/CNN and models/VQA) to answer a given question about the given image.
 
@@ -31,7 +31,7 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
 6. VGG 16 Pretrained Weights
     * Please download the weights file [vgg16_weights.h5](https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view)
 
-##Usage
+## Usage
 
 > python demo.py -image_file_name `path_to_file` -question "Question to be asked"
 
@@ -53,13 +53,13 @@ Expected Output :
 00.33 %  train station
 
 
-##Runtime
+## Runtime
 
   * GPU (Titan X) Theano optimizer=fast_run       : 51.3 seconds
   * GPU (Titan X) Theano optimizer=fast_compile   : 47.5 seconds
   * CPU (i7-5820K CPU @ 3.30GHz                   : 35.9 seconds (Is this strange or not ?)
 
-##iPython Notebook
+## iPython Notebook
 
 Jupyter/iPython Notebook has been provided with more examples and interactive tutorial.
 <https://github.com/iamaaditya/VQA_Demo/blob/master/Visual_Question_Answering_Demo_in_python_notebook.ipynb>
