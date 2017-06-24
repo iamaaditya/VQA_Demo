@@ -3,7 +3,10 @@ import cv2, spacy, numpy as np
 from keras.models import model_from_json
 from keras.optimizers import SGD
 from sklearn.externals import joblib
-    
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+from keras import backend as K
+K.set_image_data_format('channels_first')
+   
 # File paths for the model, all of these except the CNN Weights are 
 # provided in the repo, See the models/CNN/README.md to download VGG weights
 VQA_weights_file_name   = 'models/VQA/VQA_MODEL_WEIGHTS.hdf5'

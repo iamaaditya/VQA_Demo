@@ -1,15 +1,19 @@
 # VQA Demo
 
+**Updated** to work with Keras 2.0 and TF 1.2
+This is much slower than original because now it requires three numpy axis switches.
+This code is meant for education thus focus is on simplicity and not speed.
+
 This is a simple Demo of Visual Question answering which uses pretrained models (see models/CNN and models/VQA) to answer a given question about the given image.
 
 ## Dependency
 
-1. Keras version 1.0.2
+1. Keras version 2.0.5
    * Modular deep learning library based on python
 
-2. Theano/Tensorflow 
-    * As backend for Keras, you may choose either one. 
-    * For the development of this project, I used Theano 0.8.0
+2. Tensorflow 1.2.0
+    (Might also work with Theano. I have not tested Theano 
+    after the recent commit, use commit 0f89007 for Theano)
 
 3. scikit-learn
    * Quintessential machine library for python

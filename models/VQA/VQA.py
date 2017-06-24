@@ -30,7 +30,7 @@ def VQA_MODEL():
     model.add(Merge([model_language, model_image], mode='concat', concat_axis=1))
 
     for _ in xrange(number_of_dense_layers):
-        model.add(Dense(number_of_hidden_units, init='uniform'))
+        model.add(Dense(number_of_hidden_units, kernel_initializer='uniform'))
         model.add(Activation(activation_function))
         model.add(Dropout(dropout_pct))
 
