@@ -6,6 +6,8 @@ from sklearn.externals import joblib
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from keras import backend as K
 K.set_image_data_format('channels_first')
+K.set_image_dim_ordering('th')
+
    
 # File paths for the model, all of these except the CNN Weights are 
 # provided in the repo, See the models/CNN/README.md to download VGG weights
@@ -72,7 +74,8 @@ def get_question_features(question):
     ''' For a given question, a unicode string, returns the timeseris vector
     with each word (token) transformed into a 300 dimension representation
     calculated using Glove Vector '''
-    word_embeddings = spacy.load('en', vectors='en_glove_cc_300_1m_vectors')
+    # word_embeddings = spacy.load('en', vectors='en_glove_cc_300_1m_vectors')
+    word_embeddings = spacy.load('en_vectors_web_lg')
     tokens = word_embeddings(question)
     question_tensor = np.zeros((1, 30, 300))
     for j in xrange(len(tokens)):
