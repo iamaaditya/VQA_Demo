@@ -27,7 +27,7 @@ This is a simple Demo of Visual Question answering which uses pretrained models 
     * You may use other libraries as long as you can pass a 224x224 BGR Image (NOTE: BGR and not RGB)
 
 6. VGG 16 Pretrained Weights
-    * Please download the weights file [vgg16_weights.h5](https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view)
+    * Please download the weights file [vgg16_weights.h5](https://drive.google.com/file/d/19bfbRPY-MDCUuYAnHz6408U4AteOpCQT/view?usp=drive_web)
 
 ## Usage
 
